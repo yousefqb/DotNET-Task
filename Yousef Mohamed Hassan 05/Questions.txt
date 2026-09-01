@@ -1,0 +1,161 @@
+1-
+
+The main purpose of the finally block is to execute cleanup code that always runs, regardless of whether an exception was thrown, caught, or not thrown at all, and even if the try or catch blocks contain a return statement.
+
+Key uses include:
+
+Resource Cleanup: Safely closing unmanaged resources such as file streams, database connections, and network sockets to prevent resource leaks.
+
+Guaranteed Execution: Ensuring critical finalization logic executes to leave the application in a consistent state
+
+
+*************************************************************
+2-
+
+int.TryParse() improves program robustness compared to int.Parse() in the following ways:
+
+Exception Prevention: int.Parse() throws a runtime exception (such as FormatException or ArgumentNullException) when given invalid input, which can crash the program if unhandled. In contrast, int.TryParse() never throws an exception on conversion failure.
+
+Boolean Status Indicator: int.TryParse() returns a bool (true if conversion succeeds, false if it fails) and outputs the converted value via an out parameter, allowing for clean control flow.
+
+Better Performance: Because exception handling is computationally expensive in .NET, using int.TryParse() avoids performance overhead and provides faster, memory-efficient input parsing.
+
+
+*************************************************************
+3-
+
+When trying to access the .Value property on a Nullable<T> type that is currently null, an InvalidOperationException is thrown.
+
+*************************************************************
+4-
+
+It is necessary to check array bounds before accessing elements for the following reasons:
+
+Prevents Runtime Exceptions & Crashes: Accessing an index outside the valid range (less than 0 or greater than/equal to Array.Length) causes an IndexOutOfRangeException, which will crash the application if unhandled.
+
+Ensures Memory Safety & Security: It prevents reading or overwriting adjacent memory locations outside the array's allocated memory space, safeguarding against buffer overflow vulnerabilities.
+
+Maintains Data Integrity & Control: It allows the application to handle out-of-bounds conditions gracefully through controlled logic rather than abrupt runtime failures.
+
+*************************************************************
+5-
+
+The GetLength(int dimension) method is used to retrieve the number of elements in a specific dimension of a multi-dimensional array. Dimensions are zero-indexed:
+
+GetLength(0) returns the number of elements in the 1st dimension (rows).
+
+GetLength(1) returns the number of elements in the 2nd dimension (columns).
+
+It is primarily used in nested loops to dynamically determine iteration boundaries for each dimension.
+
+*************************************************************
+6-
+
+The memory allocation differs between Rectangular Arrays and Jagged Arrays as follows:
+
+Rectangular Arrays (int[,]): Allocated as a single, contiguous block of memory on the Heap. All rows share a fixed number of columns. This provides excellent memory locality and cache performance, but lacks flexibility in row sizing.
+
+Jagged Arrays (int[][]): Allocated as an array of pointers/references, where each row is an independent array object in the Heap. Rows can have varying lengths, providing memory efficiency for non-uniform data, but introducing small indirection overhead and potential memory fragmentation.
+
+*************************************************************
+7-
+
+The main purpose of Nullable Reference Types (introduced in C# 8.0) is to prevent NullReferenceException runtime errors by bringing compile-time null safety to reference types.
+
+Key benefits include:
+
+Explicit Intent: Reference types are non-nullable by default (e.g., string). To allow null, you must explicitly declare it using the nullable syntax (e.g., string?).
+
+Static Code Analysis: The compiler analyzes execution paths and issues warnings when you attempt to dereference a variable that might be null without proper null-checking.
+
+Improved Code Quality: It improves API design and documentation by making nullability expectations clear to developers at compile time.
+
+*************************************************************
+8-
+
+Boxing (converting a value type to a reference type on the Heap) and Unboxing (extracting the value back to the Stack) have significant negative performance impacts in C#:
+
+Memory Allocation Overhead: Boxing requires allocating a new object on the Heap with metadata overhead (Type Object Pointer and Sync Block Index) for a simple value type.
+
+CPU and Memory Copying Operations: Both operations involve memory copying costs (moving data from Stack to Heap during boxing, and casting/copying back from Heap to Stack during unboxing).
+
+Increased Garbage Collection (GC) Pressure: Frequent boxing creates numerous short-lived Heap objects, triggering GC passes more often, which introduces latency and slows down the application.
+
+Solution: Using Generics (e.g., List<T> instead of non-generic collections like ArrayList) completely eliminates boxing/unboxing overhead for value types.
+
+*************************************************************
+9-
+
+out parameters must be assigned a value inside the called method for the following reasons:
+
+Definite Assignment Guarantee: Since out parameters are passed uninitialized from the caller, the C# compiler strictly requires the called method to initialize them before returning to ensure memory safety and eliminate unassigned variable errors.
+
+Caller Contract: Using the out modifier establishes a strict contract promising the calling code that the parameter will hold a valid, assigned value upon method completion.
+
+Flow Analysis Protection: The compiler's static analysis verifies that every execution path (including all conditional branches like if-else or switch) assigns a value to the out parameter before the method exits.
+
+*************************************************************
+10-
+
+parameter list for the following reasons:
+
+Eliminates Positional Ambiguity: C# matches method arguments from left to right based on position. If optional parameters were placed before required parameters, the compiler would be unable to determine whether a passed argument was intended for the optional parameter or the subsequent required parameter.
+
+Ensures Deterministic Method Invocation: Placing required parameters first guarantees that all mandatory inputs are provided in order, allowing the caller to safely omit trailing arguments to rely on their default values.
+
+Compiler Resolution Rules: The static type checker relies on a strict order to match positional arguments to parameters before evaluating default values or named arguments.
+
+(Note: The only parameter allowed after optional parameters is a params array, which must always be the final parameter in a method signature.)
+
+*************************************************************
+11-
+
+The null propagation operator (?.) prevents NullReferenceException through short-circuit evaluation:
+
+Implicit Null Check: Before attempting to access a property, field, or method, the compiler generates code that evaluates whether the left-hand operand is null.
+
+Short-Circuit Execution: If the operand is null, execution immediately halts for that access chain and safely returns null instead of attempting to dereference the null reference.
+
+Safe Chaining: It allows safe traversal of deeply nested object structures (e.g., customer?.OrderHistory?.FirstOrDefault()) where any intermediate null object yields a null result cleanly without crashing the application.
+
+*************************************************************
+12-
+
+A switch expression is preferred over a traditional if statement in the following scenarios:
+
+Value Assignment and Mapping: When assigning a value to a variable based on multiple conditions, as switch expressions directly return a value with concise syntax without repeating return or assignment statements.
+
+Complex Pattern Matching: When matching against object types, properties, tuples, or relational checks (e.g., positional, property, or relational patterns), making the code far more readable than deeply nested if-else blocks.
+
+Compiler Exhaustiveness Checking: The C# compiler evaluates whether all possible input cases (e.g., all values of an enum) are handled and issues a warning if a case is missing.
+
+Code Cleanliness: It eliminates boilerplate code, reduces visual clutter using the arrow syntax (=>), and provides a clean default fallback using the discard pattern (_).
+
+*************************************************************
+13-
+
+The params keyword in C# comes with the following language limitations and compiler rules:
+
+Single Instance Limit: A method signature can contain only one params parameter.
+
+Must Be the Last Parameter: The params parameter must always be the final parameter in the method's parameter list. No parameters can follow it.
+
+Array Type Restriction: The parameter type must be a single-dimensional array (e.g., params int[] or params string[]). Multidimensional (T[,]) and jagged (T[][]) arrays are not supported.
+
+Incompatible with Reference Modifiers: You cannot combine params with ref, out, or in parameter modifiers.
+
+Performance Overhead: Passing individual values causes the compiler to implicitly allocate a new array on the Heap per invocation, which can introduce memory allocation overhead in high-throughput loops.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
