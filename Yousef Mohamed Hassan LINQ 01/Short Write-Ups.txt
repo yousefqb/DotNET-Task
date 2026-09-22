@@ -1,0 +1,31 @@
+1-
+
+Delegate: Represents the type definition or function contract in C#. It defines the signature (return type and parameter types) that specifies what kind of methods can be referenced or passed as parameters.
+
+Lambda Expression: Represents an inline, anonymous method implementation. It is the actual executable logic written using the concise => syntax without requiring an explicit method name.
+
+Relationship: A delegate is the container/type, while a lambda expression is the inline function code assigned to that delegate.
+
+*************************************************
+2-
+
+Compile-Time Type Inference: The C# compiler evaluates the initialization expression on the right-hand side and explicitly assigns that precise concrete type to the variable during compilation.
+
+Identical IL Code Generation: Produces the exact same Intermediate Language (IL) as explicitly specifying the type name; var is pure syntactic sugar with zero runtime performance cost.
+
+Enforces Strict Type Safety: Once inferred, the variable's type is immutable; assigning a value of a different type later in the scope causes a compile-time error.
+
+Distinct from dynamic: Resolves types statically at compile time, unlike dynamic which defers type resolution and binding to runtime.
+
+Mandatory Initializer Requirement: Requires an immediate right-hand assignment during declaration so the compiler can infer the strong underlying type.
+
+*************************************************
+3-
+
+LINQ Projection in Data Access (EF Core): Shaping lightweight query results dynamically (e.g., projecting only CustomerName and TotalOrders from multiple joined tables) directly in a dashboard read query.
+
+Optimized Database Transfers: Allows SELECTing only specific needed columns instead of fetching full entity models (SELECT *), minimizing payload size.
+
+Eliminates DTO Clutter: Avoids creating single-use, temporary Data Transfer Objects (DTO classes) for localized, read-only data transformations.
+
+Read-Only Data Transfer: Provides immutable, target-typed properties with automatically generated Equals(), GetHashCode(), and ToString() implementations.
