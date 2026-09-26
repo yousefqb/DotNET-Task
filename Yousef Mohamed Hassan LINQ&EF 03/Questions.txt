@@ -1,0 +1,26 @@
+1-
+
+C# / Code as Single Source of Truth: Allows developers to design business models using full Object-Oriented C# principles without being constrained by existing database schemas.
+
+Version-Controlled Database Evolution (Migrations): Tracks schema changes directly through C# Migration files, enabling version control via Git and seamless rollbacks or updates.
+
+Seamless CI/CD & Automated Testing: Facilitates creating and seeding fresh database instances programmatically (Database.Migrate()) during automated integration tests and build pipelines.
+
+Avoids Auto-Generated Code Overhead: Eliminates fragile auto-generated code files common in Database-First DB Context updates, preserving custom entity configurations.
+
+Supports Advanced Domain-Driven Design (DDD): Align perfectly with DDD architectures by insulating business logic and domain entities from relational database mechanics.
+
+
+********************************
+
+2-
+
+Separation of Concerns (Clean Architecture): Keeps domain entity classes clean and decoupled from persistence/ORM concerns by moving mapping configurations out of domain models.
+
+Supports Advanced EF Core Features: Configures complex mappings that Data Annotations cannot express (e.g., Composite Keys, Global Query Filters, Shadow Properties, and Value Converters).
+
+Centralized & Maintainable Configuration: Consolidates model rules into dedicated configuration classes (IEntityTypeConfiguration<T>) or OnModelCreating, making schema rules easier to manage and refactor.
+
+Disambiguates Validation from Persistence: Separates UI data validation logic from database schema mapping constraints, preventing overlapping responsibility.
+
+Higher Precedence & Overriding Power: Overrides default EF Core conventions and Data Annotations whenever conflicts exist in configuration logic.
