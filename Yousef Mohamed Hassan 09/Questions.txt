@@ -1,0 +1,244 @@
+1-
+Database Consistency: Prevents data corruption when enums are stored as integers and new elements are added or reordered.API/External System Mapping: Ensures exact alignment with external status codes, protocol specifications, or legacy database values.Flags Enums Support: Required when using [Flags] to assign bitwise binary values ($1, 2, 4, 8, 16$) for combining multiple values.Prevention of Reordering Bugs: Protects against underlying integer shifts when team members insert new enum values in the middle of the type.
+
+*******************************************************
+2-
+
+Compile-Time Failure: The C# compiler throws a compile-time error (CS0031: Constant value cannot be converted...) and stops the build process.
+
+Type Boundary Constraint: Enum members strictly inherit the boundary limits of their underlying integral type (int by default).
+
+Resolution: You must explicitly change the enum's underlying base type to a larger integral type (e.g., enum BigEnum : long).
+
+*******************************************************
+3-
+
+Enables Dynamic Polymorphism: Allows derived classes to redefine and override the behavior of property getters and setters using the override keyword.
+
+Enables Late Binding: Ensures that the property implementation of the runtime object is called, regardless of the reference type.
+
+Custom Business Logic: Permits child classes to inject custom validation, logging, or state calculation into property accessors.
+
+ORM Lazy Loading Support: Essential in frameworks like Entity Framework to allow proxy creation for lazy-loading navigation properties.
+
+*******************************************************
+4-
+
+Explicit Inheritance Termination: The sealed modifier explicitly instructs the compiler that the current method or property implementation is final and must not be altered further down the inheritance chain.
+
+Compile-Time Safety Enforcement: Attempting to override a sealed member causes an immediate compile-time error (CS0239).
+
+Protection of Core Logic: Prevents derived classes from modifying critical business rules, security routines, or invariant logic.
+
+Compiler Performance Optimization: Enables the JIT compiler to optimize method dispatching by replacing virtual lookup calls with faster direct non-virtual calls.
+
+*******************************************************
+5-
+
+Ownership Level: Static members belong to the class itself, whereas instance members belong to a specific object instance created with new.
+
+Memory Allocation: Only one copy of a static member exists in memory shared across all instances, while each object maintains its own independent copy of instance members.
+
+Access Mechanism: Static members are accessed directly using the class name (ClassName.Member), whereas instance members require an object reference (objectInstance.Member).
+
+Lifetime: Static members remain in memory for the application's entire lifetime; instance members live and die with their specific object instance.
+
+*******************************************************
+6-
+
+No, not all operators can be overloaded in C#. The language intentionally restricts operator overloading to preserve core type safety and compiler predictability.
+
+Overloadable Operators: Arithmetic (+, -, *, /), relational (==, !=, <, >), unary (++, --, !), and bitwise (&, |, ^).
+
+Non-Overloadable Operators:
+
+Assignment Operator (=): Overloading would break foundational memory copy and reference assignment semantics.
+
+Member Access & Type Operators (., ?., is, as, typeof, sizeof): Reserved exclusively for the compiler and runtime engine to manage memory layout, type checking, and object navigation safely.
+
+Short-Circuit Logical Operators (&&, ||): Cannot be overloaded directly to maintain short-circuit evaluation logic (overloaded implicitly via &, |, true, and false).
+
+*******************************************************
+7-
+
+You should consider changing the underlying type of an enum in the following scenarios:Memory Optimization: Changing from int (4 bytes) to byte (1 byte) saves substantial memory when working with high-volume collections, arrays, or memory-critical applications.Large Numerical Value Range: Changing to long or ulong is required when enum values exceed the standard signed 32-bit integer range ($> 2,147,483,647$).Extending Bitwise Flags ([Flags]): Changing to long allows supporting up to 64 distinct binary flag combinations instead of the 32-flag limit imposed by int.Database & Interoperability Alignment: Aligning the enum directly with underlying storage fields (e.g., mapping byte to SQL TINYINT or matching external network protocol structures).
+
+*******************************************************
+8-
+
+Instantiation Prevention: Static classes cannot be instantiated using the new keyword; therefore, instance constructors are logically redundant and explicitly prohibited by the C# compiler.
+
+No Object State to Initialize: Instance constructors exist to allocate memory and initialize state for specific instance objects on the Heap. Static classes contain only static members associated with the type itself.
+
+Sealed and Abstract Nature: Under the hood, the C# compiler emits static classes as both abstract and sealed, preventing both instantiation and derivation.
+
+Static Constructor Alternative: Type-level initialization for static fields is handled exclusively by a single static constructor (static ClassName()), which runs automatically before the type is first accessed.
+
+*******************************************************
+9-
+
+1. Behavior in Classes (Reference Types)
+Default == Operator: Compares Reference Equality (checks whether both variables point to the exact same memory address).
+
+Default Equals() Method: Performs reference equality by default, but is designed to be overridden to execute Value Equality comparison.
+
+Polymorphic Behavior: Equals() supports runtime polymorphism (late binding), whereas == is an operator resolved at compile-time (early binding).
+
+2. Behavior in Structs (Value Types)
+Default Equals() Method: Compares Value Equality field-by-field out of the box (uses Reflection internally, which impacts performance).
+
+Default == Operator: Not supported by default in structs; attempting to use it results in a compile-time error unless explicitly overloaded.
+
+Overloading Requirement: To enable == for a struct, you must manually overload both == and != operators.
+
+*******************************************************
+10-
+
+Overriding ToString() in custom classes is beneficial for the following key reasons:
+
+Enhanced Debugging Experience: Replaces the default type name output (e.g., Namespace.ClassName) with meaningful state representation directly visible in Visual Studio debuggers and DataTips.
+
+Streamlined Logging and Tracing: Simplifies recording object states inside log files, unit test assertions, and diagnostic outputs without manually concatenating individual properties.
+
+Seamless String Formatting: Automatically formats custom objects cleanly when using string interpolation (e.g., $"Details: {myObject}") or standard string formatting methods.
+
+Cleaner UI/Control Binding: Provides a default text-based representation when objects are directly bound to user interface controls like list boxes, combo boxes, or text displays.
+
+*******************************************************
+11-
+
+Yes, C# supports Generic Constraints using the where clause. Constraints restrict the type arguments that callers can supply when instantiating generic types or invoking generic methods.
+
+Compile-Time Safety & Capability: Enforces strictly allowed types at compile-time and unlocks access to specific type members/methods inside the generic code.
+
+Common Constraint Types:
+
+where T : struct — Value type constraint.
+
+where T : class — Reference type constraint.
+
+where T : new() — Parameterless constructor requirement.
+
+where T : InterfaceName — Must implement a specific interface.
+
+where T : BaseClassName — Must inherit from a specific base class.
+
+
+*******************************************************
+12-
+
+Scope of Definition: Generic classes define type parameters (<T>) at the class level affecting all instance members, whereas generic methods define type parameters restricted solely to the method's own scope.
+
+Type Assignment Timing: Generic classes require explicit type argument specification during object instantiation (new MyClass<int>()), while generic methods support Type Inference, allowing the compiler to infer types automatically from arguments (MyMethod(5)).
+
+Class Context Independence: Generic methods can exist inside standard non-generic classes, enabling specialized generic behavior without making the entire class generic.
+
+Granular Constraint Rules: Generic methods can declare individual type constraints independent of any surrounding class-level generic constraints.
+
+*******************************************************
+13-
+
+Adheres to the DRY Principle: Eliminates redundant code duplication by maintaining a single implementation that works universally across all data types.
+
+Enhanced Maintainability: Centralizes logic so that any bug fixes or performance updates require modifications in only one place.
+
+Guarantees Type Safety: Enforces at compile-time that both variables being swapped share the exact same type, preventing runtime casting errors.
+
+Optimal Performance: Prevents memory boxing and unboxing overhead when handling value types (unlike legacy object-based solutions).
+
+Future-Proof Design: Supports any new custom types or classes created in the future without requiring additional method overloads.
+
+*******************************************************
+14-
+
+Overriding Equals in the Department Class: How Accuracy Is Achieved
+Improving accuracy when overriding the Equals method in the Department class depends on the following points:
+Value Equality Instead of Reference Equality
+The default behavior of Equals in classes compares whether the two objects point to the same location in memory (reference equality). When you override it, the comparison becomes based on the actual values of the properties (such as Id or Name) — this is known as value equality.
+Successful Comparison with New Instances
+When searching for a department using a new object new Department(6, "NETWORK") inside an array that contains the same values, the search function will be able to find the element and return true because the values match — instead of returning false due to the objects having different memory addresses.
+Facilitating the Search Logic in the Related Class (Employee)
+When comparing employees based on their departments, the Employee class calls the Equals method of Department. Having an accurate comparison for the department ensures that search, sorting, and filtering operations inside employee arrays work correctly.
+
+*******************************************************
+15-
+
+Performance Protection (Avoids Reflection): Default value comparison across all struct fields requires Reflection, which introduces severe performance overhead and unnecessary memory boxing.
+
+Ambiguous Equality Semantics: Structs can contain reference-type fields (e.g., arrays or objects); the compiler cannot safely assume whether callers want reference equality or deep value equality for those child fields.
+
+Encourages Explicit Optimization: Forces developers to deliberately overload the == and != operators to write fast, direct, type-safe field comparisons tailored to the struct's requirements.
+
+Consistency Requirement: Requiring explicit implementation ensures that if == is overloaded, !=, Equals(), and GetHashCode() are also overridden consistently.
+
+
+#################################### PART 02 ########################################
+
+1-
+
+Type-Agnostic Code Design: Generalization via Generics means writing classes, interfaces, or algorithms against placeholder types (e.g., <T>), decoupling logic from concrete data types.
+
+Write-Once, Reuse-Everywhere: Eliminates redundant code duplication by allowing a single generic structure to operate safely on any specified data type.
+
+Compile-Time Type Safety: Unlike traditional generalization using object, generic generalization catches type mismatches at compile-time rather than runtime.
+
+Zero Boxing/Unboxing Overhead: Delivers optimal performance for value types by generating type-specific IL code at runtime without memory boxing.
+
+*******************************************************
+2-
+
+Domain Modeling: Hierarchy design translates real-world organizational structures, domain concepts, and business entities into structured parent-child class relationships (Base Class $\rightarrow$ Derived Classes).Code Reuse & Standardization: Encapsulates shared domain attributes and behaviors at higher abstraction levels (e.g., BaseEntity or User), minimizing code duplication across sub-entities (Admin, Customer).Extensibility & Polymorphism (OCP): Enables adding new specialized business roles or objects (e.g., adding ContractEmployee alongside FullTimeEmployee) without breaking existing business logic.Role-Based Rules & Permissions: Provides a clear structural foundation for applying tiered business logic, polymorphic calculations (e.g., differential payroll or tax processing), and access control rules.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

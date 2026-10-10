@@ -1,0 +1,93 @@
+questions task c# 04
+--------------------
+
+
+1-
+number=0;
+bool=false;
+string=null;
+
+*****************************************************************
+2-
+
+The main differences between Array.Clone() and Array.Copy() are:
+
+Array.Clone(): Creates and returns a new array object that is a shallow copy of the original array. It copies all elements and requires explicit casting since it returns an object.
+
+Array.Copy(): Copies elements from an existing source array to an already existing destination array. It provides high flexibility, allowing you to specify starting indices and the exact range of elements to copy.
+
+*****************************************************************
+3-
+
+The difference between Length and GetLength() for multi-dimensional arrays is:
+
+Length (Property): Returns the total number of elements across all dimensions combined in the array (e.g., a 3x4 matrix has a Length of 12).
+
+GetLength(int dimension) (Method): Returns the number of elements in a specific dimension (0-indexed). For example, GetLength(0) returns the number of rows, and GetLength(1) returns the number of columns.
+
+
+*****************************************************************
+4-
+
+The difference between Array.Copy() and Array.ConstrainedCopy() lies in how they handle failure and state rollback during copying:
+
+Array.Copy(): Copies elements directly. If an exception occurs midway (e.g., a type casting failure), the copying process halts, leaving the destination array in a partially modified state with the elements copied up to the error.
+
+Array.ConstrainedCopy(): Guarantees atomic operation behavior. It ensures that either all elements are successfully copied, or none are. If an exception or failure occurs, it rolls back, leaving the destination array in its original, unmodified state.
+
+*****************************************************************
+5-
+
+foreach is preferred for read-only operations on arrays for the following reasons:
+
+Read-only Safety: The iteration variable in a foreach loop is read-only by design. The compiler generates an error if you attempt to modify it, preventing accidental side effects on array elements.
+
+Prevents Index Errors: It completely avoids IndexOutOfRangeException hazards because it automatically manages iteration boundaries without requiring explicit index management.
+
+Code Readability & Simplicity: It produces cleaner, more expressive, and less error-prone code by directly accessing the elements rather than working with index variables..
+
+*****************************************************************
+6-
+
+Input validation is essential when working with user inputs for the following reasons:
+
+Security: It protects applications against malicious attacks such as SQL Injection and Cross-Site Scripting (XSS) by preventing untrusted data from being executed as code.
+
+System Stability: It prevents crashes and unexpected runtime errors by ensuring that the input data matches the expected type, format, and range.
+
+Data Integrity: It ensures that only clean, valid, and correctly formatted data is processed and stored in the database.
+
+
+*****************************************************************
+7-
+
+You can format the output of a 2D array for better readability using the following techniques:
+
+Nested Loops with Proper Line Breaks: Use an outer loop for rows and an inner loop for columns. Print elements in the inner loop using Console.Write(), and call Console.WriteLine() at the end of each row to move to the next line.
+
+String Alignment Formatting: Use composite formatting like Console.Write($"{array[i, j], -5}") to assign a fixed column width for each element, keeping columns aligned even with varying digit lengths.
+
+Tab Characters (\t): Separate adjacent elements with tab characters (Console.Write(array[i, j] + "\t")) to create clean visual columns.
+
+*****************************************************************
+8-
+
+You should prefer a switch statement over if-else in the following scenarios:Checking Multiple Discrete Values: When testing a single variable against multiple exact values (e.g., Enums, status codes, menu choices) rather than ranges or complex logical expressions.Better Readability and Maintainability: It eliminates repetitive else if blocks, resulting in cleaner, structured, and more readable code.Performance Optimization: For a large number of cases (typically 5 or more), the compiler can optimize a switch statement using jump tables or branch tables, yielding $O(1)$ lookup time instead of sequentially evaluating O(N) conditions in if-else.Pattern Matching Support: In modern C#, switch expressions and pattern matching provide highly expressive, concise, and type-safe conditionally driven code.
+
+*****************************************************************
+9-
+
+The time complexity of Array.Sort() in C# / .NET is $O(N \log N)$ for Average, Best, and Worst cases, where $N$ is the number of elements being sorted.This is because .NET implements the IntroSort (Introspective Sort) algorithm, which dynamically combines three sorting algorithms:QuickSort: Used as the primary algorithm for high performance.HeapSort: Switched to if the recursion depth exceeds a limit to prevent QuickSort's worst-case O(N^2) time complexity.InsertionSort: Used for small partitions/arrays to optimize performance on small sub-arrays.
+
+*****************************************************************
+10-
+
+For a standard single-dimensional array, both for and foreach loops have virtually identical performance when calculating the sum.
+
+Compiler & JIT Optimization: When iterating over a native array, the C# compiler and JIT compiler optimize foreach into an indexed for loop under the hood, completely eliminating the overhead of creating an Enumerator object.
+
+Bounds Check Elimination: The JIT compiler optimizes both loops to avoid array bound checks during iteration, resulting in identical execution speed and zero memory allocation.
+
+Recommendation: foreach is preferred for calculating array sums because it is cleaner, more readable, and safer against off-by-one index errors without sacrificing any performance.
+
+

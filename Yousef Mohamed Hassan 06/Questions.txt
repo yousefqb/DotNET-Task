@@ -1,0 +1,100 @@
+1-
+
+Structs in C# cannot inherit from another struct or class due to the following core design principles:Value Type Memory Layout: Structs are Value Types designed to be stored directly on the Stack (or inline within containing objects). The compiler requires a fixed, deterministic memory size for every struct at compile time. Dynamic class/struct inheritance would introduce variable layout sizes, destroying efficient stack allocation.Avoidance of Object Slicing: Because structs are copied by value rather than passed by reference, copying a derived struct into a base struct variable would truncate (slice away) additional derived fields, leading to subtle bugs and data loss.Implicitly Sealed: In C#, all structs are implicitly sealed, meaning no other type can derive from them.System.ValueType Root: All structs implicitly inherit from the class System.ValueType (which inherits from System.Object), but explicit class or struct inheritance is strictly prohibited.(Note: While structs cannot inherit from classes or other structs, they can implement interfaces to achieve polymorphism.)
+
+*****************************************************************
+2-
+
+Access modifiers control the scope and visibility of class members by establishing boundaries on where a member can be accessed, read, or modified within the codebase:Encapsulation & Security: They enforce object-oriented encapsulation by hiding internal implementation details and exposing only the necessary public API.Compile-Time Enforcement: The compiler uses access modifiers to validate whether a reference to a member is authorized based on its declared protection level.Visibility Breakdown by Access Modifierprivate: Visible only within the defining class.private protected: Visible within the defining class and derived classes, provided they are in the same assembly.protected: Visible within the defining class and all derived classes, regardless of their assembly.internal: Visible anywhere within the same assembly (project), but hidden from external assemblies.protected internal: Visible anywhere within the same assembly, OR in derived classes in other assemblies.public: Visible everywhere with no access restrictions.
+
+*****************************************************************
+3-
+
+Encapsulation is a fundamental principle of Object-Oriented Programming (OOP) that plays a critical role in software architecture for the following reasons:
+
+Data Protection and Control: It shields internal object state by restricting direct access to fields. Access is mediated through public properties or methods, allowing validation logic and preventing invalid state transitions.
+
+Information Hiding: It hides complex implementation details behind a clean public interface, reducing cognitive load for developers using the class.
+
+Maintainability and Flexibility: Developers can refactor internal logic or change internal data structures without breaking external code that relies on the class's public interface.
+
+Reduced Coupling: By isolating internal implementation details from external callers, encapsulation minimizes dependencies across components, making the codebase easier to maintain, reuse, and unit test.
+
+*****************************************************************
+4-
+
+Constructors in structs are used to initialize the fields and properties of a value type upon instantiation:
+
+Parameterized Constructors: Allow custom values to be passed during instantiation (e.g., new Point(10, 20)). In C#, a parameterized constructor in a struct must fully initialize all fields and auto-implemented properties before returning control.
+
+Parameterless Constructors (C# 10+): Starting with C# 10, developers can explicitly define a parameterless constructor (e.g., public Point()) to set custom default values for struct fields instead of relying solely on implicit zero-initialization.
+
+Implicit Default Constructor Behavior: If no explicit parameterless constructor is invoked (for example, using default(MyStruct) or allocating a struct array), C# zero-initializes all bytes in memory (setting numbers to 0, booleans to false, and references to null) without executing any custom constructor code.
+
+*****************************************************************
+5-
+
+Overriding the ToString() method significantly improves code readability and developer experience in C# for the following reasons:
+
+Meaningful Object Inspection: The default Object.ToString() implementation returns only the fully qualified type name (e.g., ProjectNamespace.User). Overriding it provides human-readable, meaningful information about the object's current state (e.g., User [ID=101, Name=Yousef]).
+
+Streamlined Debugging and Logging: During debugging (Visual Studio inspection windows) or when writing logs, an overridden ToString() instantly reveals key object properties without needing to manually inspect every nested field.
+
+Cleaner String Formatting: It allows objects to be used seamlessly in string interpolation and console output (e.g., Console.WriteLine(user); or $"Details: {user}"), executing the formatted string output automatically without extra boilerplate conversion code.
+
+
+
+*****************************************************************************PART02********************************************************************************************************
+
+1-
+A copy constructor is a constructor that creates a new object by copying the values and field states from an existing object of the same class.
+
+**********************************************
+2-
+
+An Indexer is a member in C# that enables an object to be indexed like an array using the [] operator. It allows instance-based property access using one or more index parameters.
+
+When to Use
+Use an indexer when a class represents a custom collection, data wrapper, or data container, and you want to provide clean, array-like syntax for accessing elements without exposing internal data structures directly.
+
+Business Use Cases
+Financial & Portfolio Systems: Looking up stock prices or asset values by ticker symbol keys.
+
+**********************************************
+3-
+
+Access Modifiers: Keywords (private, protected, public, internal, private protected, protected internal) that control the scope and visibility of class members.
+
+Class: user-defined reference type that acts as a blueprint for creating objects.
+
+Struct: lightweight value type allocated on the stack, suitable for small data structures.
+
+Constructor: specialized method invoked automatically during object creation to initialize fields and properties.
+
+Constructor Overloading: Defining multiple constructors within a class using different parameter types or counts.
+
+Method Overloading: Creating multiple methods in the same class sharing the same name but distinct parameter signatures.
+
+Encapsulation: Hiding the internal representation of an object to protect data integrity, granting controlled access via properties.
+
+Inheritance: The mechanism by which a child class inherits member fields and methods from a parent class.
+
+Abstraction: Hiding complex execution details and presenting only essential, high-level features to the user.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
