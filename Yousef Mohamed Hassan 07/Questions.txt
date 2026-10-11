@@ -1,0 +1,70 @@
+1-
+When you define a custom parameterized constructor in a class, the C# compiler automatically stops generating the implicit, parameterless default constructor for the following reasons:
+
+Enforcing Valid Object State: Defining a custom constructor indicates that specific parameters are strictly required to create a valid object. Suppressing the parameterless constructor prevents callers from instantiating incomplete or uninitialized objects.
+
+Explicit Design Intent: The compiler respects developer design decisions. If a parameterless constructor is still needed alongside custom constructors, C# requires you to declare it explicitly (e.g., public MyClass() { }).
+
+Preventing Logic Bugs: Without suppression, a caller could bypass required setup logic, leading to unexpected null references or invalid default state errors during execution.
+
+*******************************************************************
+2-
+
+Method overloading enhances both code readability and reusability in software design:
+
+Improves Readability: It establishes a clean, consistent API by using a single, intuitive method name (e.g., CalculateArea or Print) for operations that perform the same conceptual task across different data types or parameter counts, avoiding cluttered method names like PrintInt or PrintString.
+
+Increases Reusability & Flexibility: Developers can invoke the same logical method using whatever parameters or data types they currently have available without writing redundant conversion code.
+
+Reduces Code Duplication (DRY Principle): Overloaded methods can chain into a primary core method (passing default parameters or formatted inputs), centralizing core business logic in one place while offering multiple invocation entry points.
+
+*******************************************************************
+3-
+
+The purpose of constructor chaining in inheritance (using the : base(...) keyword in C#) includes:
+
+Ensuring Proper Base Initialization: It guarantees that the base class state and inherited fields are fully and correctly initialized before the derived class constructor executes its own logic.
+
+Eliminating Code Duplication (DRY Principle): It avoids repeating field initialization logic in child classes by reusing the base class constructor.
+
+Controlled Execution Order: It allows a derived class to explicitly invoke a specific parameterized constructor of the base class rather than defaulting to a parameterless base constructor.
+
+*******************************************************************
+4-
+
+The difference between override and new when redefining an inherited method in C# comes down to polymorphism and method dispatching:
+
+override (Polymorphic Overriding): Extends or modifies the implementation of an inherited virtual or abstract method. It enables dynamic polymorphism (late binding), meaning the derived class method executes even when called through a base class reference variable.
+
+new (Method Hiding): Explicitly hides an inherited member from the base class, creating a separate method signature. It disables dynamic polymorphism (early binding), meaning calling the method through a base class reference will execute the base class implementation, not the derived one.
+
+
+*******************************************************************
+5-
+
+The ToString() method is often overridden in custom C# classes for the following reasons:
+
+Provides Meaningful Representation: Replaces the default System.Object.ToString() behavior (which only prints the fully qualified class name) with human-readable textual output representing the object's actual state.
+
+Simplifies Debugging and Logging: Enhances developer efficiency during debugging and log analysis by displaying relevant field values directly in output windows or log files.
+
+Enables Seamless String Formatting: Allows objects to be passed directly into console output methods, loggers, or string interpolation syntax (e.g., $"User: {userObj}") where ToString() is called implicitly.
+
+*********************** PART02 ********************************************
+6-
+
+Difference between Class and Struct in C#:
+
+Class: Reference Type | Struct: Value Type
+
+Class: Allocated on the Heap | Struct: Allocated on the Stack
+
+Class: Copied by reference (points to same object) | Struct: Copied by value (creates independent copy)
+
+Class: Can be null by default | Struct: Cannot be null by default
+
+Class: Supports full class inheritance | Struct: No inheritance (sealed), can implement interfaces
+
+Class: Cleaned up by Garbage Collector | Struct: Cleaned up automatically when leaving scope
+
+Class: Used for large complex objects | Struct: Used for small lightweight data structure

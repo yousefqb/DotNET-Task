@@ -1,0 +1,127 @@
+Question 01 :
+
+Selected Block Comment / Uncomment Shortcuts
+
+Comment out selection: Ctrl + K, Ctrl + C
+
+Uncomment selection: Ctrl + K, Ctrl + U
+
+Note: Press Ctrl + K first, release K while holding Ctrl, then press C or U.
+
+*************************************************************************************************************
+Question 02 :
+
+Difference Between Runtime Error and Logical Error
+
+Runtime Error: Occurs when the program is executing and causes it to crash or throw an exception due to an illegal operation.
+
+Example: Dividing by zero (10 / 0) or accessing a null object.
+
+Logical Error: Occurs when the program runs completely without crashing, but produces an incorrect output due to flawed developer logic.
+
+Example: Calculating the area of a rectangle using length + width instead of length * width.
+
+*************************************************************************************************************
+Question 03 :
+
+Importance of PascalCase in C#:
+
+Readability: Makes code much cleaner and easier to read.
+
+Consistency: Keeps your code aligned with official Microsoft .NET standards.
+
+Clarity: Helps developers instantly distinguish between classes/methods (PascalCase) and local variables (camelCase).
+
+Teamwork: Makes it easy for teams to understand and maintain each other's code.
+
+*************************************************************************************************************
+Question 04 :
+
+Difference Between Value Types and Reference Types in Memory:
+
+Value Types:
+
+Memory Location: Stored directly in the Stack.
+
+Data Stored: Holds the actual value directly.
+
+Behavior: Copying creates an independent copy of the data.
+
+Examples: int, double, bool, struct.
+
+Reference Types:
+
+Memory Location: Object is stored in the Heap, while its reference (memory address) is stored in the Stack.
+
+Data Stored: Holds a pointer/address pointing to the real data.
+
+Behavior: Copying copies only the address, so both variables point to the exact same object.
+
+Examples: class, string, array, object.
+
+*************************************************************************************************************
+Question 05 :
+
+the output of the following code
+
+int a = 2, b = 7; 
+
+Console.WriteLine(a % b); 
+
+is : 2 ,bc 2 is less than 7
+
+*************************************************************************************************************
+Question 06 :
+
+Difference between && and & in C#:
+
+&& (Logical AND):
+
+Short-circuiting: If the first condition is false, it skips checking the second condition.
+
+Use case: Used in conditional statements (if statements).
+
+Example: if (user != null && user.IsActive) (Prevents errors if user is null).
+
+& (Bitwise AND / Non-Short-Circuiting):
+
+No short-circuiting: Always evaluates both conditions, even if the first one is false.
+
+Bitwise operations: Performs operations at the bit level on integers.
+
+Example: 5 & 3 (Performs bitwise calculation: 0101 & 0011 = 0001 = 1).
+
+*************************************************************************************************************
+Question 07 :
+
+Why explicit casting is required from double to int:
+
+Data Loss: A double has decimal places, while an int only holds whole numbers. Converting cuts off the decimal part (e.g., 3.99 becomes 3).
+
+Safety: C# forces you to write (int) explicitly to confirm that you are aware of and accept losing the fractional data.
+
+
+*************************************************************************************************************
+Question 08 :
+
+Exceptions that might occur:
+
+FormatException: Happens if the input is not in the correct format (e.g., entering "abc" when expecting a number).
+
+OverflowException: Happens if the number entered is too large or too small for the data type.
+
+
+*************************************************************************************************************
+Question 09 :
+
+Given the code below, what is the value of x after execution? Explain why 
+int x = 5; 
+int y = ++x + x++; 
+
+output 
+y = 12;
+x = 7;
+bc there is 2 increment
+
+
+
