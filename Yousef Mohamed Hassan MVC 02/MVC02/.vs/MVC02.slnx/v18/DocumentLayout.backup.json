@@ -1,0 +1,105 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\YUSSEF\\Desktop\\New folder\\Yousef Mohamed Hassan MVC 02\\MVC02\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{C42EDD77-D26F-47E5-8E2A-1B2E2650EED2}|MVC02\\MVC02.csproj|c:\\users\\yussef\\desktop\\new folder\\yousef mohamed hassan mvc 02\\mvc02\\mvc02\\views\\student\\showdetails.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{C42EDD77-D26F-47E5-8E2A-1B2E2650EED2}|MVC02\\MVC02.csproj|solutionrelative:mvc02\\views\\student\\showdetails.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C42EDD77-D26F-47E5-8E2A-1B2E2650EED2}|MVC02\\MVC02.csproj|c:\\users\\yussef\\desktop\\new folder\\yousef mohamed hassan mvc 02\\mvc02\\mvc02\\views\\student\\showall.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{C42EDD77-D26F-47E5-8E2A-1B2E2650EED2}|MVC02\\MVC02.csproj|solutionrelative:mvc02\\views\\student\\showall.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C42EDD77-D26F-47E5-8E2A-1B2E2650EED2}|MVC02\\MVC02.csproj|c:\\users\\yussef\\desktop\\new folder\\yousef mohamed hassan mvc 02\\mvc02\\mvc02\\controllers\\studentcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C42EDD77-D26F-47E5-8E2A-1B2E2650EED2}|MVC02\\MVC02.csproj|solutionrelative:mvc02\\controllers\\studentcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C42EDD77-D26F-47E5-8E2A-1B2E2650EED2}|MVC02\\MVC02.csproj|c:\\users\\yussef\\desktop\\new folder\\yousef mohamed hassan mvc 02\\mvc02\\mvc02\\models\\classesbl\\studentbl.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C42EDD77-D26F-47E5-8E2A-1B2E2650EED2}|MVC02\\MVC02.csproj|solutionrelative:mvc02\\models\\classesbl\\studentbl.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C42EDD77-D26F-47E5-8E2A-1B2E2650EED2}|MVC02\\MVC02.csproj|c:\\users\\yussef\\desktop\\new folder\\yousef mohamed hassan mvc 02\\mvc02\\mvc02\\models\\classes\\student.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C42EDD77-D26F-47E5-8E2A-1B2E2650EED2}|MVC02\\MVC02.csproj|solutionrelative:mvc02\\models\\classes\\student.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "ShowDetails.cshtml",
+              "DocumentMoniker": "C:\\Users\\YUSSEF\\Desktop\\New folder\\Yousef Mohamed Hassan MVC 02\\MVC02\\MVC02\\Views\\Student\\ShowDetails.cshtml",
+              "RelativeDocumentMoniker": "MVC02\\Views\\Student\\ShowDetails.cshtml",
+              "ToolTip": "C:\\Users\\YUSSEF\\Desktop\\New folder\\Yousef Mohamed Hassan MVC 02\\MVC02\\MVC02\\Views\\Student\\ShowDetails.cshtml*",
+              "RelativeToolTip": "MVC02\\Views\\Student\\ShowDetails.cshtml*",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABQAAAARAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-10-11T20:56:45.454Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "ShowAll.cshtml",
+              "DocumentMoniker": "C:\\Users\\YUSSEF\\Desktop\\New folder\\Yousef Mohamed Hassan MVC 02\\MVC02\\MVC02\\Views\\Student\\ShowAll.cshtml",
+              "RelativeDocumentMoniker": "MVC02\\Views\\Student\\ShowAll.cshtml",
+              "ToolTip": "C:\\Users\\YUSSEF\\Desktop\\New folder\\Yousef Mohamed Hassan MVC 02\\MVC02\\MVC02\\Views\\Student\\ShowAll.cshtml*",
+              "RelativeToolTip": "MVC02\\Views\\Student\\ShowAll.cshtml*",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-10-11T20:50:34.463Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "StudentController.cs",
+              "DocumentMoniker": "C:\\Users\\YUSSEF\\Desktop\\New folder\\Yousef Mohamed Hassan MVC 02\\MVC02\\MVC02\\Controllers\\StudentController.cs",
+              "RelativeDocumentMoniker": "MVC02\\Controllers\\StudentController.cs",
+              "ToolTip": "C:\\Users\\YUSSEF\\Desktop\\New folder\\Yousef Mohamed Hassan MVC 02\\MVC02\\MVC02\\Controllers\\StudentController.cs*",
+              "RelativeToolTip": "MVC02\\Controllers\\StudentController.cs*",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-10-11T20:46:44.691Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "StudentBL.cs",
+              "DocumentMoniker": "C:\\Users\\YUSSEF\\Desktop\\New folder\\Yousef Mohamed Hassan MVC 02\\MVC02\\MVC02\\Models\\ClassesBL\\StudentBL.cs",
+              "RelativeDocumentMoniker": "MVC02\\Models\\ClassesBL\\StudentBL.cs",
+              "ToolTip": "C:\\Users\\YUSSEF\\Desktop\\New folder\\Yousef Mohamed Hassan MVC 02\\MVC02\\MVC02\\Models\\ClassesBL\\StudentBL.cs*",
+              "RelativeToolTip": "MVC02\\Models\\ClassesBL\\StudentBL.cs*",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAABEAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-10-11T20:40:03.72Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Student.cs",
+              "DocumentMoniker": "C:\\Users\\YUSSEF\\Desktop\\New folder\\Yousef Mohamed Hassan MVC 02\\MVC02\\MVC02\\Models\\Classes\\Student.cs",
+              "RelativeDocumentMoniker": "MVC02\\Models\\Classes\\Student.cs",
+              "ToolTip": "C:\\Users\\YUSSEF\\Desktop\\New folder\\Yousef Mohamed Hassan MVC 02\\MVC02\\MVC02\\Models\\Classes\\Student.cs*",
+              "RelativeToolTip": "MVC02\\Models\\Classes\\Student.cs*",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAyAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-10-11T19:08:11.1Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
