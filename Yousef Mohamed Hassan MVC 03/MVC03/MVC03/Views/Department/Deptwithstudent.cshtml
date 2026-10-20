@@ -1,0 +1,34 @@
+﻿@model List<deptwithstudentVM>
+
+<table class="table table-bordered table-hover">
+    <thead>
+        <tr>
+            <th>dept name</th>
+            <th>dept Students</th>
+        </tr>
+    </thead>
+    <tbody>
+        
+        @foreach(var item in Model)
+        {
+            <tr>
+                <td>@item.deptname</td>
+                <td>
+                    
+                     @if (item.stunames.Count() >0)
+                     {
+                     <select class="form form-control">
+                         @foreach (var it in item.stunames)
+                         {
+                             <option>@it</option>               
+                         }
+                     </select>
+
+                     }
+                     else
+                     {<h5>there is no students</h5>}
+                    </td>
+            </tr>
+        }
+    </tbody>
+</table>
