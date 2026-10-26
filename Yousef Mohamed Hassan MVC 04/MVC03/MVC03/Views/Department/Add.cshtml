@@ -1,0 +1,14 @@
+﻿@model Department
+<h1>Add</h1>
+
+        
+
+<form method="post" action="/Department/SaveAdd" >
+    <div>
+        <label>dept name</label>
+        <input type="text" name="Name" value="@Model?.Name" class="form form-control" />
+
+    </div>
+    <input type="submit" value="Create" class="btn btn-success mt-3 mb-3"/>
+</form>
+<a href="/Department/index"> Back to List</a>

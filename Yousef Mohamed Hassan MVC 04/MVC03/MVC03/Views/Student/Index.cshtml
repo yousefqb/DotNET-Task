@@ -1,0 +1,26 @@
+﻿@model List<Student>
+
+<h1>Student Details</h1>
+
+<a href="/Student/Add" class="btn btn-success mt-3 mb-3">New</a>
+<table class="table table-bordered table-hover ">
+    <thead>
+        <tr>
+            <th>Student Id</th>
+            <th>Student name</th>
+            <th>Department Id</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (Student item in Model)
+        {
+            <tr>
+                <td>@item.Id</td>
+                <td>@item.Name</td>
+                <td>@item.DepartmentId</td>
+                <td><a href="/Student/Edit/@item.Id" class="btn btn-outline-primary">Edit</a></td>
+                <td><a href="/Student/Delete/@item.Id" class="btn btn-outline-primary">Delete</a></td>
+            </tr>
+        }
+    </tbody>
+</table>

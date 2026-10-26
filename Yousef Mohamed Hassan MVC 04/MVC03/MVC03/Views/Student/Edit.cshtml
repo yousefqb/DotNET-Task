@@ -1,0 +1,35 @@
+﻿@model StuDepViewModel
+
+<h1>Edit Student</h1>
+
+<form method="post" action="/Student/SaveEdit/@Model.Id">
+
+    <input type="hidden" name="Id" value="@Model.Id" class="form form-control" />
+
+    <label>Name</label>
+    <input type="text" name="Name" value="@Model.Name" class="form form-control" />
+
+    <label>Department Name</label>
+
+    @*<input type="text" name="DepartmentId" value="@Model.DepartmentId" class="form form-control mt-3" />*@
+    <select id="DepartmentId" name="DepartmentId" class="form-control">
+        @foreach(Department item in Model.Departments)
+            {
+                @if (item.Id == Model.DepartmentId)
+                {
+                <option value="@item.Id" selected>@item.Name</option>
+                }
+                else
+                {
+                <option value="@item.Id">@item.Name</option>
+                }
+            }
+        </select>
+
+    <input type="submit" value="Save Changes" class="btn btn-success mt-3 mb-3" />
+
+</form>
+<a href="/Student/Index">Back To List</a>
+
+
+
