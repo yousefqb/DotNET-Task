@@ -1,0 +1,26 @@
+﻿@model StuDepViewModel
+
+<h1>Edit Student</h1>
+
+<form  asp-action="SaveEdit" asp-route-id="Id" asp-controller="Student">
+
+    <input asp-for="Id" class="form form-control" />
+    
+    <label asp-for="Name"></label>
+    <input asp-for="Name" class="form form-control" />
+
+    <label asp-for="Salary"></label>
+    <input asp-for="Salary" class="form form-control" />
+
+    <label asp-for="Departments"></label>
+
+    <select asp-items="Model.Departments" asp-for="DepartmentId" class="form form-control mt-3" ></select>
+
+    <input type="submit" value="Save Changes" class="btn btn-success mt-3 mb-3" />
+
+</form>
+
+<a asp-action="Index" asp-controller="Student">Back To List</a>
+
+
+

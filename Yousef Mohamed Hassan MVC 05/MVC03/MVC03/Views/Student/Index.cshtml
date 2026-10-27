@@ -1,0 +1,30 @@
+﻿@model List<Student>
+@{
+    Layout = "_ourLayout";
+}
+<h1>Student Details</h1>
+
+<a asp-action="Add" asp-controller="Student" class="btn btn-success mt-3 mb-3">New</a>
+<table class="table table-bordered table-hover ">
+    <thead>
+        <tr>
+            <th>Student Id</th>
+            <th>Student name</th>
+            <th>Student Salary</th>
+            <th>Department Id</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (Student item in Model)
+        {
+            <tr>
+                <td>@item.Id</td>
+                <td>@item.Name</td>
+                <td>@item.Salary</td>
+                <td>@item.DepartmentId</td>
+                <td><a asp-action="Edit" asp-route-id="@item.Id" class="btn btn-outline-primary">Edit</a></td>
+                <td><a asp-action="Delete" asp-route-id="@item.Id" class="btn btn-outline-primary">Delete</a></td>
+            </tr>
+        }
+    </tbody>
+</table>

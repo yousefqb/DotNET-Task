@@ -1,0 +1,340 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\YUSSEF\\Desktop\\Yousef Mohamed Hassan MVC 04\\MVC03\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{05AF00C3-21DC-C1BE-1B79-DB27E4A89ED6}|MVC03\\MVC05.csproj|c:\\users\\yussef\\desktop\\yousef mohamed hassan mvc 04\\mvc03\\mvc03\\models\\classes\\student.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{05AF00C3-21DC-C1BE-1B79-DB27E4A89ED6}|MVC03\\MVC05.csproj|solutionrelative:mvc03\\models\\classes\\student.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{05AF00C3-21DC-C1BE-1B79-DB27E4A89ED6}|MVC03\\MVC05.csproj|c:\\users\\yussef\\desktop\\yousef mohamed hassan mvc 04\\mvc03\\mvc03\\controllers\\studentcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{05AF00C3-21DC-C1BE-1B79-DB27E4A89ED6}|MVC03\\MVC05.csproj|solutionrelative:mvc03\\controllers\\studentcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{05AF00C3-21DC-C1BE-1B79-DB27E4A89ED6}|MVC03\\MVC05.csproj|c:\\users\\yussef\\desktop\\yousef mohamed hassan mvc 04\\mvc03\\mvc03\\views\\student\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{05AF00C3-21DC-C1BE-1B79-DB27E4A89ED6}|MVC03\\MVC05.csproj|solutionrelative:mvc03\\views\\student\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{05AF00C3-21DC-C1BE-1B79-DB27E4A89ED6}|MVC03\\MVC05.csproj|c:\\users\\yussef\\desktop\\yousef mohamed hassan mvc 04\\mvc03\\mvc03\\models\\vmcalsses\\studepviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{05AF00C3-21DC-C1BE-1B79-DB27E4A89ED6}|MVC03\\MVC05.csproj|solutionrelative:mvc03\\models\\vmcalsses\\studepviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{05AF00C3-21DC-C1BE-1B79-DB27E4A89ED6}|MVC03\\MVC05.csproj|c:\\users\\yussef\\desktop\\yousef mohamed hassan mvc 04\\mvc03\\mvc03\\views\\department\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{05AF00C3-21DC-C1BE-1B79-DB27E4A89ED6}|MVC03\\MVC05.csproj|solutionrelative:mvc03\\views\\department\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{05AF00C3-21DC-C1BE-1B79-DB27E4A89ED6}|MVC03\\MVC05.csproj|c:\\users\\yussef\\desktop\\yousef mohamed hassan mvc 04\\mvc03\\mvc03\\views\\department\\add.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{05AF00C3-21DC-C1BE-1B79-DB27E4A89ED6}|MVC03\\MVC05.csproj|solutionrelative:mvc03\\views\\department\\add.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{05AF00C3-21DC-C1BE-1B79-DB27E4A89ED6}|MVC03\\MVC05.csproj|c:\\users\\yussef\\desktop\\yousef mohamed hassan mvc 04\\mvc03\\mvc03\\views\\_viewstart.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{05AF00C3-21DC-C1BE-1B79-DB27E4A89ED6}|MVC03\\MVC05.csproj|solutionrelative:mvc03\\views\\_viewstart.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{05AF00C3-21DC-C1BE-1B79-DB27E4A89ED6}|MVC03\\MVC05.csproj|c:\\users\\yussef\\desktop\\yousef mohamed hassan mvc 04\\mvc03\\mvc03\\views\\_viewimports.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{05AF00C3-21DC-C1BE-1B79-DB27E4A89ED6}|MVC03\\MVC05.csproj|solutionrelative:mvc03\\views\\_viewimports.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{05AF00C3-21DC-C1BE-1B79-DB27E4A89ED6}|MVC03\\MVC05.csproj|c:\\users\\yussef\\desktop\\yousef mohamed hassan mvc 04\\mvc03\\mvc03\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{05AF00C3-21DC-C1BE-1B79-DB27E4A89ED6}|MVC03\\MVC05.csproj|solutionrelative:mvc03\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{05AF00C3-21DC-C1BE-1B79-DB27E4A89ED6}|MVC03\\MVC05.csproj|c:\\users\\yussef\\desktop\\yousef mohamed hassan mvc 04\\mvc03\\mvc03\\views\\shared\\_ourlayout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{05AF00C3-21DC-C1BE-1B79-DB27E4A89ED6}|MVC03\\MVC05.csproj|solutionrelative:mvc03\\views\\shared\\_ourlayout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{05AF00C3-21DC-C1BE-1B79-DB27E4A89ED6}|MVC03\\MVC05.csproj|c:\\users\\yussef\\desktop\\yousef mohamed hassan mvc 04\\mvc03\\mvc03\\models\\blclasses\\studentbl.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{05AF00C3-21DC-C1BE-1B79-DB27E4A89ED6}|MVC03\\MVC05.csproj|solutionrelative:mvc03\\models\\blclasses\\studentbl.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{05AF00C3-21DC-C1BE-1B79-DB27E4A89ED6}|MVC03\\MVC05.csproj|c:\\users\\yussef\\desktop\\yousef mohamed hassan mvc 04\\mvc03\\mvc03\\views\\student\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{05AF00C3-21DC-C1BE-1B79-DB27E4A89ED6}|MVC03\\MVC05.csproj|solutionrelative:mvc03\\views\\student\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{05AF00C3-21DC-C1BE-1B79-DB27E4A89ED6}|MVC03\\MVC05.csproj|c:\\users\\yussef\\desktop\\yousef mohamed hassan mvc 04\\mvc03\\mvc03\\views\\student\\byid.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{05AF00C3-21DC-C1BE-1B79-DB27E4A89ED6}|MVC03\\MVC05.csproj|solutionrelative:mvc03\\views\\student\\byid.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{05AF00C3-21DC-C1BE-1B79-DB27E4A89ED6}|MVC03\\MVC05.csproj|c:\\users\\yussef\\desktop\\yousef mohamed hassan mvc 04\\mvc03\\mvc03\\views\\student\\delete.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{05AF00C3-21DC-C1BE-1B79-DB27E4A89ED6}|MVC03\\MVC05.csproj|solutionrelative:mvc03\\views\\student\\delete.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{05AF00C3-21DC-C1BE-1B79-DB27E4A89ED6}|MVC03\\MVC05.csproj|c:\\users\\yussef\\desktop\\yousef mohamed hassan mvc 04\\mvc03\\mvc03\\views\\student\\add.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{05AF00C3-21DC-C1BE-1B79-DB27E4A89ED6}|MVC03\\MVC05.csproj|solutionrelative:mvc03\\views\\student\\add.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{05AF00C3-21DC-C1BE-1B79-DB27E4A89ED6}|MVC03\\MVC05.csproj|c:\\users\\yussef\\desktop\\yousef mohamed hassan mvc 04\\mvc03\\mvc03\\models\\blclasses\\departmentbl.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{05AF00C3-21DC-C1BE-1B79-DB27E4A89ED6}|MVC03\\MVC05.csproj|solutionrelative:mvc03\\models\\blclasses\\departmentbl.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{05AF00C3-21DC-C1BE-1B79-DB27E4A89ED6}|MVC03\\MVC05.csproj|c:\\users\\yussef\\desktop\\yousef mohamed hassan mvc 04\\mvc03\\mvc03\\controllers\\departmentcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{05AF00C3-21DC-C1BE-1B79-DB27E4A89ED6}|MVC03\\MVC05.csproj|solutionrelative:mvc03\\controllers\\departmentcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{05AF00C3-21DC-C1BE-1B79-DB27E4A89ED6}|MVC03\\MVC05.csproj|c:\\users\\yussef\\desktop\\yousef mohamed hassan mvc 04\\mvc03\\mvc03\\views\\department\\byid.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{05AF00C3-21DC-C1BE-1B79-DB27E4A89ED6}|MVC03\\MVC05.csproj|solutionrelative:mvc03\\views\\department\\byid.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{05AF00C3-21DC-C1BE-1B79-DB27E4A89ED6}|MVC03\\MVC05.csproj|c:\\users\\yussef\\desktop\\yousef mohamed hassan mvc 04\\mvc03\\mvc03\\views\\department\\deptwithstudent.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{05AF00C3-21DC-C1BE-1B79-DB27E4A89ED6}|MVC03\\MVC05.csproj|solutionrelative:mvc03\\views\\department\\deptwithstudent.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 13,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "_ViewImports.cshtml",
+              "DocumentMoniker": "C:\\Users\\YUSSEF\\Desktop\\Yousef Mohamed Hassan MVC 04\\MVC03\\MVC03\\Views\\_ViewImports.cshtml",
+              "RelativeDocumentMoniker": "MVC03\\Views\\_ViewImports.cshtml",
+              "ToolTip": "C:\\Users\\YUSSEF\\Desktop\\Yousef Mohamed Hassan MVC 04\\MVC03\\MVC03\\Views\\_ViewImports.cshtml",
+              "RelativeToolTip": "MVC03\\Views\\_ViewImports.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-10-27T21:42:18.151Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "_ourLayout.cshtml",
+              "DocumentMoniker": "C:\\Users\\YUSSEF\\Desktop\\Yousef Mohamed Hassan MVC 04\\MVC03\\MVC03\\Views\\Shared\\_ourLayout.cshtml",
+              "RelativeDocumentMoniker": "MVC03\\Views\\Shared\\_ourLayout.cshtml",
+              "ToolTip": "C:\\Users\\YUSSEF\\Desktop\\Yousef Mohamed Hassan MVC 04\\MVC03\\MVC03\\Views\\Shared\\_ourLayout.cshtml",
+              "RelativeToolTip": "MVC03\\Views\\Shared\\_ourLayout.cshtml",
+              "ViewState": "AgIAAB4AAAAAAAAAAAAAAAwAAAAzAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-10-27T17:49:24.963Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "_Layout.cshtml",
+              "DocumentMoniker": "C:\\Users\\YUSSEF\\Desktop\\Yousef Mohamed Hassan MVC 04\\MVC03\\MVC03\\Views\\Shared\\_Layout.cshtml",
+              "RelativeDocumentMoniker": "MVC03\\Views\\Shared\\_Layout.cshtml",
+              "ToolTip": "C:\\Users\\YUSSEF\\Desktop\\Yousef Mohamed Hassan MVC 04\\MVC03\\MVC03\\Views\\Shared\\_Layout.cshtml",
+              "RelativeToolTip": "MVC03\\Views\\Shared\\_Layout.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAHAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-10-26T15:45:56.255Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "Edit.cshtml",
+              "DocumentMoniker": "C:\\Users\\YUSSEF\\Desktop\\Yousef Mohamed Hassan MVC 04\\MVC03\\MVC03\\Views\\Student\\Edit.cshtml",
+              "RelativeDocumentMoniker": "MVC03\\Views\\Student\\Edit.cshtml",
+              "ToolTip": "C:\\Users\\YUSSEF\\Desktop\\Yousef Mohamed Hassan MVC 04\\MVC03\\MVC03\\Views\\Student\\Edit.cshtml",
+              "RelativeToolTip": "MVC03\\Views\\Student\\Edit.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAaAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-10-25T22:28:43.75Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "byid.cshtml",
+              "DocumentMoniker": "C:\\Users\\YUSSEF\\Desktop\\Yousef Mohamed Hassan MVC 04\\MVC03\\MVC03\\Views\\Student\\byid.cshtml",
+              "RelativeDocumentMoniker": "MVC03\\Views\\Student\\byid.cshtml",
+              "ToolTip": "C:\\Users\\YUSSEF\\Desktop\\Yousef Mohamed Hassan MVC 04\\MVC03\\MVC03\\Views\\Student\\byid.cshtml",
+              "RelativeToolTip": "MVC03\\Views\\Student\\byid.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-10-26T14:03:26.612Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "Delete.cshtml",
+              "DocumentMoniker": "C:\\Users\\YUSSEF\\Desktop\\Yousef Mohamed Hassan MVC 04\\MVC03\\MVC03\\Views\\Student\\Delete.cshtml",
+              "RelativeDocumentMoniker": "MVC03\\Views\\Student\\Delete.cshtml",
+              "ToolTip": "C:\\Users\\YUSSEF\\Desktop\\Yousef Mohamed Hassan MVC 04\\MVC03\\MVC03\\Views\\Student\\Delete.cshtml",
+              "RelativeToolTip": "MVC03\\Views\\Student\\Delete.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAARAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-10-26T02:46:48.428Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "StuDepViewModel.cs",
+              "DocumentMoniker": "C:\\Users\\YUSSEF\\Desktop\\Yousef Mohamed Hassan MVC 04\\MVC03\\MVC03\\Models\\VMcalsses\\StuDepViewModel.cs",
+              "RelativeDocumentMoniker": "MVC03\\Models\\VMcalsses\\StuDepViewModel.cs",
+              "ToolTip": "C:\\Users\\YUSSEF\\Desktop\\Yousef Mohamed Hassan MVC 04\\MVC03\\MVC03\\Models\\VMcalsses\\StuDepViewModel.cs",
+              "RelativeToolTip": "MVC03\\Models\\VMcalsses\\StuDepViewModel.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAuwA8AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-10-26T00:29:14.853Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\YUSSEF\\Desktop\\Yousef Mohamed Hassan MVC 04\\MVC03\\MVC03\\Views\\Student\\Index.cshtml",
+              "RelativeDocumentMoniker": "MVC03\\Views\\Student\\Index.cshtml",
+              "ToolTip": "C:\\Users\\YUSSEF\\Desktop\\Yousef Mohamed Hassan MVC 04\\MVC03\\MVC03\\Views\\Student\\Index.cshtml",
+              "RelativeToolTip": "MVC03\\Views\\Student\\Index.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAMAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-10-25T22:21:09.884Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "StudentController.cs",
+              "DocumentMoniker": "C:\\Users\\YUSSEF\\Desktop\\Yousef Mohamed Hassan MVC 04\\MVC03\\MVC03\\Controllers\\StudentController.cs",
+              "RelativeDocumentMoniker": "MVC03\\Controllers\\StudentController.cs",
+              "ToolTip": "C:\\Users\\YUSSEF\\Desktop\\Yousef Mohamed Hassan MVC 04\\MVC03\\MVC03\\Controllers\\StudentController.cs",
+              "RelativeToolTip": "MVC03\\Controllers\\StudentController.cs",
+              "ViewState": "AgIAABEAAAAAAAAAAAAgwAcAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-10-25T21:54:44.502Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Add.cshtml",
+              "DocumentMoniker": "C:\\Users\\YUSSEF\\Desktop\\Yousef Mohamed Hassan MVC 04\\MVC03\\MVC03\\Views\\Department\\Add.cshtml",
+              "RelativeDocumentMoniker": "MVC03\\Views\\Department\\Add.cshtml",
+              "ToolTip": "C:\\Users\\YUSSEF\\Desktop\\Yousef Mohamed Hassan MVC 04\\MVC03\\MVC03\\Views\\Department\\Add.cshtml",
+              "RelativeToolTip": "MVC03\\Views\\Department\\Add.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAcAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-10-25T22:05:23.479Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "Add.cshtml",
+              "DocumentMoniker": "C:\\Users\\YUSSEF\\Desktop\\Yousef Mohamed Hassan MVC 04\\MVC03\\MVC03\\Views\\Student\\Add.cshtml",
+              "RelativeDocumentMoniker": "MVC03\\Views\\Student\\Add.cshtml",
+              "ToolTip": "C:\\Users\\YUSSEF\\Desktop\\Yousef Mohamed Hassan MVC 04\\MVC03\\MVC03\\Views\\Student\\Add.cshtml",
+              "RelativeToolTip": "MVC03\\Views\\Student\\Add.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAjAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-10-25T22:02:08.797Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "DepartmentController.cs",
+              "DocumentMoniker": "C:\\Users\\YUSSEF\\Desktop\\Yousef Mohamed Hassan MVC 04\\MVC03\\MVC03\\Controllers\\DepartmentController.cs",
+              "RelativeDocumentMoniker": "MVC03\\Controllers\\DepartmentController.cs",
+              "ToolTip": "C:\\Users\\YUSSEF\\Desktop\\Yousef Mohamed Hassan MVC 04\\MVC03\\MVC03\\Controllers\\DepartmentController.cs",
+              "RelativeToolTip": "MVC03\\Controllers\\DepartmentController.cs",
+              "ViewState": "AgIAACQAAAAAAAAAAAAowDQAAABAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-10-17T16:20:54.455Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "_ViewStart.cshtml",
+              "DocumentMoniker": "C:\\Users\\YUSSEF\\Desktop\\Yousef Mohamed Hassan MVC 04\\MVC03\\MVC03\\Views\\_ViewStart.cshtml",
+              "RelativeDocumentMoniker": "MVC03\\Views\\_ViewStart.cshtml",
+              "ToolTip": "C:\\Users\\YUSSEF\\Desktop\\Yousef Mohamed Hassan MVC 04\\MVC03\\MVC03\\Views\\_ViewStart.cshtml",
+              "RelativeToolTip": "MVC03\\Views\\_ViewStart.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAEAAAAPAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-10-27T15:32:57.637Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Student.cs",
+              "DocumentMoniker": "C:\\Users\\YUSSEF\\Desktop\\Yousef Mohamed Hassan MVC 04\\MVC03\\MVC03\\Models\\Classes\\Student.cs",
+              "RelativeDocumentMoniker": "MVC03\\Models\\Classes\\Student.cs",
+              "ToolTip": "C:\\Users\\YUSSEF\\Desktop\\Yousef Mohamed Hassan MVC 04\\MVC03\\MVC03\\Models\\Classes\\Student.cs*",
+              "RelativeToolTip": "MVC03\\Models\\Classes\\Student.cs*",
+              "ViewState": "AgIAABQAAAAAAAAAAAAgwBcAAAAaAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-10-25T22:03:54.188Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "byid.cshtml",
+              "DocumentMoniker": "C:\\Users\\YUSSEF\\Desktop\\Yousef Mohamed Hassan MVC 04\\MVC03\\MVC03\\Views\\Department\\byid.cshtml",
+              "RelativeDocumentMoniker": "MVC03\\Views\\Department\\byid.cshtml",
+              "ToolTip": "C:\\Users\\YUSSEF\\Desktop\\Yousef Mohamed Hassan MVC 04\\MVC03\\MVC03\\Views\\Department\\byid.cshtml",
+              "RelativeToolTip": "MVC03\\Views\\Department\\byid.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-10-26T14:03:11.079Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "Deptwithstudent.cshtml",
+              "DocumentMoniker": "C:\\Users\\YUSSEF\\Desktop\\Yousef Mohamed Hassan MVC 04\\MVC03\\MVC03\\Views\\Department\\Deptwithstudent.cshtml",
+              "RelativeDocumentMoniker": "MVC03\\Views\\Department\\Deptwithstudent.cshtml",
+              "ToolTip": "C:\\Users\\YUSSEF\\Desktop\\Yousef Mohamed Hassan MVC 04\\MVC03\\MVC03\\Views\\Department\\Deptwithstudent.cshtml",
+              "RelativeToolTip": "MVC03\\Views\\Department\\Deptwithstudent.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABYAAABAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-10-26T14:02:59.74Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "DepartmentBL.cs",
+              "DocumentMoniker": "C:\\Users\\YUSSEF\\Desktop\\Yousef Mohamed Hassan MVC 04\\MVC03\\MVC03\\Models\\BLClasses\\DepartmentBL.cs",
+              "RelativeDocumentMoniker": "MVC03\\Models\\BLClasses\\DepartmentBL.cs",
+              "ToolTip": "C:\\Users\\YUSSEF\\Desktop\\Yousef Mohamed Hassan MVC 04\\MVC03\\MVC03\\Models\\BLClasses\\DepartmentBL.cs",
+              "RelativeToolTip": "MVC03\\Models\\BLClasses\\DepartmentBL.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAtAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-10-19T15:30:48.939Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\YUSSEF\\Desktop\\Yousef Mohamed Hassan MVC 04\\MVC03\\MVC03\\Views\\Department\\Index.cshtml",
+              "RelativeDocumentMoniker": "MVC03\\Views\\Department\\Index.cshtml",
+              "ToolTip": "C:\\Users\\YUSSEF\\Desktop\\Yousef Mohamed Hassan MVC 04\\MVC03\\MVC03\\Views\\Department\\Index.cshtml",
+              "RelativeToolTip": "MVC03\\Views\\Department\\Index.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAaAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-10-26T14:03:15.803Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "StudentBL.cs",
+              "DocumentMoniker": "C:\\Users\\YUSSEF\\Desktop\\Yousef Mohamed Hassan MVC 04\\MVC03\\MVC03\\Models\\BLClasses\\StudentBL.cs",
+              "RelativeDocumentMoniker": "MVC03\\Models\\BLClasses\\StudentBL.cs",
+              "ToolTip": "C:\\Users\\YUSSEF\\Desktop\\Yousef Mohamed Hassan MVC 04\\MVC03\\MVC03\\Models\\BLClasses\\StudentBL.cs",
+              "RelativeToolTip": "MVC03\\Models\\BLClasses\\StudentBL.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-10-19T16:25:10.747Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

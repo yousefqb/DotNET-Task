@@ -1,0 +1,15 @@
+﻿@model Department
+
+<h1>Add</h1>
+
+
+<form asp-action="SaveAdd" >
+    
+    <Label asp-for="Name"></Label>
+    <input asp-for="Name" class="form form-control" />
+    <span asp-validation-for="Name" class="text-danger"></span>
+
+    
+    <input type="submit" value="Create" class="btn btn-success mt-3 mb-3"/>
+</form>
+<a asp-action="Index" asp-controller="Department"> Back to List</a>

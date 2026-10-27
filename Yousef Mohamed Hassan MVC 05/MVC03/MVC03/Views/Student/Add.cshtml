@@ -1,0 +1,25 @@
+﻿@model Student
+
+<form asp-action="SaveAdd">
+    <div>  
+    <Label asp-for="Name"></Label>
+    <input asp-for="Name" class="form form-control" />
+    <span asp-Validation-For="Name" class="text-danger"></span>
+    </div>
+
+    <div>  
+        <Label asp-for="Salary"></Label>
+        <input asp-for="Salary" class="form form-control" />
+        <span asp-Validation-For="Salary" class="text-danger"></span>
+    </div>  
+
+    <div>  
+       <Label asp-for="DepartmentId"></Label>
+       <select asp-for="DepartmentId" asp-items="ViewBag.DeptList" class="form-control"></select>
+       <span asp-Validation-For="DepartmentId" class="text-danger"></span>
+    </div>  
+
+        
+    <input type="submit" value="Create" class="btn btn-success mt-3 mb-3" />
+</form>
+<a asp-action="Index" asp-controller="Student">Back to List</a>
